@@ -126,7 +126,7 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
             }
         }
         
-        double normalizedMax = log2(1/zoomScale);
+        double normalizedMax = MAX(1, log2(1/zoomScale));
         
         CGFloat red, green, blue, alpha;
         uint indexOrigin;
