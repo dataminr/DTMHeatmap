@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2E8232211FE5C17800332ACF /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82321D1FE5C17700332ACF /* DTMHeatmap.m */; };
-		2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321E1FE5C17700332ACF /* DTMHeatmap.h */; };
-		2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */; };
+		2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321E1FE5C17700332ACF /* DTMHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8232241FE5C17800332ACF /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232201FE5C17700332ACF /* DTMDiffHeatmap.m */; };
-		2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232251FE5C18500332ACF /* DTMDiffColorProvider.h */; };
+		2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232251FE5C18500332ACF /* DTMDiffColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E82322A1FE5C18600332ACF /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232261FE5C18500332ACF /* DTMColorProvider.m */; };
-		2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232271FE5C18500332ACF /* DTMColorProvider.h */; };
+		2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232271FE5C18500332ACF /* DTMColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E82322C1FE5C18600332ACF /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */; };
 		2E8232311FE5C1FC00332ACF /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */; };
-		2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */; };
-		2E8232391FE5C47200332ACF /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232381FE5C47100332ACF /* DTMHeatmap.h */; };
+		2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232381FE5C47100332ACF /* ModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E82323C1FE5C53E00332ACF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E82323B1FE5C53E00332ACF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMDiffColorProvider.m; path = "Color Providers/DTMDiffColorProvider.m"; sourceTree = "<group>"; };
 		2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
 		2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
-		2E8232381FE5C47100332ACF /* DTMHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmap.h; sourceTree = "<group>"; };
+		2E8232381FE5C47100332ACF /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 		2E82323B1FE5C53E00332ACF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 		2E8232041FE5C12700332ACF = {
 			isa = PBXGroup;
 			children = (
-				2E8232381FE5C47100332ACF /* DTMHeatmap.h */,
+				2E8232381FE5C47100332ACF /* ModuleHeader.h */,
 				2E82322D1FE5C18900332ACF /* Color Providers */,
 				2E82322E1FE5C1E200332ACF /* Heatmaps */,
 				2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */,
@@ -112,7 +112,7 @@
 				2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */,
 				2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */,
 				2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */,
-				2E8232391FE5C47200332ACF /* DTMHeatmap.h in Headers */,
+				2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */,
 				2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */,
 				2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */,
 			);
@@ -318,7 +318,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"MODULEMAP_FILE[sdk=*]" = DTMHeatmap.xcodeproj/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.boltman.DTMHeatmap;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -337,7 +339,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"MODULEMAP_FILE[sdk=*]" = DTMHeatmap.xcodeproj/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.boltman.DTMHeatmap;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
