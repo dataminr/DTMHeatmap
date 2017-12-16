@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapHit.h>
+#import <MapKit/MapKit.h>
 
 //! Project version number for DTMHeatmap.
 FOUNDATION_EXPORT double DTMHeatmapVersionNumber;
