@@ -17,6 +17,7 @@
 		2E82322C1FE5C18600332ACF /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */; };
 		2E8232311FE5C1FC00332ACF /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */; };
 		2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */; };
+		2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232381FE5C47100332ACF /* ModuleHeader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMDiffColorProvider.m; path = "Color Providers/DTMDiffColorProvider.m"; sourceTree = "<group>"; };
 		2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
 		2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
+		2E8232381FE5C47100332ACF /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		2E8232041FE5C12700332ACF = {
 			isa = PBXGroup;
 			children = (
+				2E8232381FE5C47100332ACF /* ModuleHeader.h */,
 				2E82322D1FE5C18900332ACF /* Color Providers */,
 				2E82322E1FE5C1E200332ACF /* Heatmaps */,
 				2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */,
@@ -97,6 +100,7 @@
 				2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */,
 				2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */,
 				2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */,
+				2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */,
 				2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */,
 				2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */,
 			);
