@@ -19,6 +19,8 @@
 		2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232381FE5C47100332ACF /* ModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E82323C1FE5C53E00332ACF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E82323B1FE5C53E00332ACF /* MapKit.framework */; };
+		2E8232401FE5C80B00332ACF /* NSValue+MKMapPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8232411FE5C80B00332ACF /* NSValue+MKMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
 		2E8232381FE5C47100332ACF /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 		2E82323B1FE5C53E00332ACF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+MKMapPoint.h"; path = "Heatmaps/NSValue+MKMapPoint.h"; sourceTree = "<group>"; };
+		2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValue+MKMapPoint.m"; path = "Heatmaps/NSValue+MKMapPoint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		2E82322E1FE5C1E200332ACF /* Heatmaps */ = {
 			isa = PBXGroup;
 			children = (
+				2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */,
+				2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */,
 				2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */,
 				2E8232201FE5C17700332ACF /* DTMDiffHeatmap.m */,
 				2E82321E1FE5C17700332ACF /* DTMHeatmap.h */,
@@ -115,6 +121,7 @@
 				2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */,
 				2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */,
 				2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */,
+				2E8232401FE5C80B00332ACF /* NSValue+MKMapPoint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +197,7 @@
 				2E8232311FE5C1FC00332ACF /* DTMHeatmapRenderer.m in Sources */,
 				2E82322C1FE5C18600332ACF /* DTMDiffColorProvider.m in Sources */,
 				2E8232211FE5C17800332ACF /* DTMHeatmap.m in Sources */,
+				2E8232411FE5C80B00332ACF /* NSValue+MKMapPoint.m in Sources */,
 				2E8232241FE5C17800332ACF /* DTMDiffHeatmap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

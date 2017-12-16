@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char DTMHeatmapVersionString[];
 #import "DTMDiffHeatmap.h"
 #import "DTMHeatmap.h"
 #import "DTMHeatmapRenderer.h"
+#import "NSValue+MKMapPoint.h"
