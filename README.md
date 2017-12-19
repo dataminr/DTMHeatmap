@@ -16,10 +16,11 @@ This mode is a standard heatmap and should produce the same results as the origi
 This mode compares two sets of data to visualize which areas have "heated up" and which have "cooled down". Increased activity is shown with warm colors, decreased activity is shown with cool colors.
 
 ## Installation
-The easiest way to get `DTMHeatmap` is via [CocoaPods](http://cocoapods.org/)
-```
-pod 'DTMHeatmap'
-```
+#### [CocoaPods](https://github.com/cocoapods/cocoapods)
+Add `pod 'DTMHeatmap'` to your Podfile
+
+#### [Carthage](https://github.com/Carthage/Carthage)
+Add `github "dataminr/DTMHeatmap"` to your Cartfile
 
 ## Usage
 Using `DTMHeatmap` is relatively straightforward. After installing using the instructions above:
