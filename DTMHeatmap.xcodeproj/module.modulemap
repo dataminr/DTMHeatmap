@@ -1,0 +1,6 @@
+framework module DTMHeatmap {
+    umbrella header "ModuleHeader.h"
+    
+    export *
+    module * { export * }
+}
