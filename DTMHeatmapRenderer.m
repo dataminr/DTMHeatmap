@@ -16,13 +16,22 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
 @property (nonatomic, readonly) float *scaleMatrix;
 @end
 
-@implementation DTMHeatmapRenderer
+@implementation DTMHeatmapRenderer {
+    NSInteger heatRadiusInPoints;
+}
 
 - (id)initWithOverlay:(id <MKOverlay>)overlay
 {
+    self = [self initWithOverlay:overlay andHeatRadiusPoints:kSBHeatRadiusInPoints];
+    return self;
+}
+
+- (id)initWithOverlay:(id <MKOverlay>)overlay andHeatRadiusPoints: (NSInteger) heatRadius {
     if (self = [super initWithOverlay:overlay]) {
-        _scaleMatrix = malloc(2 * kSBHeatRadiusInPoints * 2 * kSBHeatRadiusInPoints * sizeof(float));
+        heatRadiusInPoints = heatRadius;
+        _scaleMatrix = malloc(2 * heatRadiusInPoints * 2 * heatRadiusInPoints * sizeof(float));
         [self populateScaleMatrix];
+        self.zoomNormalization = false;
     }
     
     return self;
@@ -35,17 +44,17 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
 
 - (void)populateScaleMatrix
 {
-    for (int i = 0; i < 2 * kSBHeatRadiusInPoints; i++) {
-        for (int j = 0; j < 2 * kSBHeatRadiusInPoints; j++) {
-            float distance = sqrt((i - kSBHeatRadiusInPoints) * (i - kSBHeatRadiusInPoints) + (j - kSBHeatRadiusInPoints) * (j - kSBHeatRadiusInPoints));
-            float scaleFactor = 1 - distance / kSBHeatRadiusInPoints;
+    for (int i = 0; i < 2 * heatRadiusInPoints; i++) {
+        for (int j = 0; j < 2 * heatRadiusInPoints; j++) {
+            float distance = sqrt((i - heatRadiusInPoints) * (i - heatRadiusInPoints) + (j - heatRadiusInPoints) * (j - heatRadiusInPoints));
+            float scaleFactor = 1 - distance / heatRadiusInPoints;
             if (scaleFactor < 0) {
                 scaleFactor = 0;
             } else {
-                scaleFactor = (expf(-distance/10.0) - expf(-kSBHeatRadiusInPoints/10.0)) / expf(0);
+                scaleFactor = (expf(-distance/10.0) - expf(-heatRadiusInPoints/10.0)) / expf(0);
             }
             
-            _scaleMatrix[j * 2 * kSBHeatRadiusInPoints + i] = scaleFactor;
+            _scaleMatrix[j * 2 * heatRadiusInPoints + i] = scaleFactor;
         }
     }
 }
@@ -70,10 +79,10 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
         // pad out the mapRect with the radius on all sides.
         // we care about points that are not in (but close to) this rect
         CGRect paddedRect = [self rectForMapRect:mapRect];
-        paddedRect.origin.x -= kSBHeatRadiusInPoints / zoomScale;
-        paddedRect.origin.y -= kSBHeatRadiusInPoints / zoomScale;
-        paddedRect.size.width += 2 * kSBHeatRadiusInPoints / zoomScale;
-        paddedRect.size.height += 2 * kSBHeatRadiusInPoints / zoomScale;
+        paddedRect.origin.x -= heatRadiusInPoints / zoomScale;
+        paddedRect.origin.y -= heatRadiusInPoints / zoomScale;
+        paddedRect.size.width += 2 * heatRadiusInPoints / zoomScale;
+        paddedRect.size.height += 2 * heatRadiusInPoints / zoomScale;
         MKMapRect paddedMapRect = [self mapRectForRect:paddedRect];
         
         // Get the dictionary of values out of the model for this mapRect and zoomScale.
@@ -81,6 +90,7 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
         NSDictionary *heat = [hm mapPointsWithHeatInMapRect:paddedMapRect
                                                     atScale:zoomScale];
         
+        double maxValue = 0;
         for (NSValue *key in heat) {
             // convert key to mapPoint
             MKMapPoint mapPoint;
@@ -95,22 +105,28 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
             
             if (value != 0 && !isnan(value)) { // don't bother with 0 or NaN
                 // iterate through surrounding pixels and increase
-                for (int i = 0; i < 2 * kSBHeatRadiusInPoints; i++) {
-                    for (int j = 0; j < 2 * kSBHeatRadiusInPoints; j++) {
+                for (int i = 0; i < 2 * heatRadiusInPoints; i++) {
+                    for (int j = 0; j < 2 * heatRadiusInPoints; j++) {
                         // find the array index
-                        int column = floor(matrixCoord.x - kSBHeatRadiusInPoints + i);
-                        int row = floor(matrixCoord.y - kSBHeatRadiusInPoints + j);
+                        int column = floor(matrixCoord.x - heatRadiusInPoints + i);
+                        int row = floor(matrixCoord.y - heatRadiusInPoints + j);
                         
                         // make sure this is a valid array index
                         if (row >= 0 && column >= 0 && row < rows && column < columns) {
                             int index = columns * row + column;
-                            double addVal = value * _scaleMatrix[j * 2 * kSBHeatRadiusInPoints + i];
+                            double addVal = value * _scaleMatrix[j * 2 * heatRadiusInPoints + i];
                             pointValues[index] += addVal;
+                            
+                            if (pointValues[index] > maxValue) {
+                                maxValue = pointValues[index];
+                            }
                         }
                     }
                 }
             }
         }
+        
+        double normalizedMax = MAX(1, log2(1/zoomScale));
         
         CGFloat red, green, blue, alpha;
         uint indexOrigin;
@@ -119,7 +135,8 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
         for (int i = 0; i < arrayLen; i++) {
             if (pointValues[i] != 0) {
                 indexOrigin = 4 * i;
-                [colorProvider colorForValue:pointValues[i]
+                double value = self.zoomNormalization ? pointValues[i] / normalizedMax : pointValues[i];
+                [colorProvider colorForValue:value
                                          red:&red
                                        green:&green
                                         blue:&blue

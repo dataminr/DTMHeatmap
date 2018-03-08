@@ -25,19 +25,21 @@ static const int kSBScreenPointsPerBucket = 10;
 
 @interface DTMHeatmap : NSObject <MKOverlay>
 
-- (NSDictionary *)mapPointsWithHeatInMapRect:(MKMapRect)rect
-                                     atScale:(MKZoomScale)scale;
-- (MKMapRect)boundingMapRect;
-- (void)setData:(NSDictionary *)newHeatMapData;
-
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 @property (strong, nonatomic) DTMColorProvider *colorProvider;
 
+@property (nonatomic) int scalePower;
+@property (nonatomic) int screenPointsPerBucket;
 @property (nonatomic, readonly) double maxValue;
 @property (readonly) double zoomedOutMax;
 @property (nonatomic, readonly) NSDictionary *pointsWithHeat;
 @property (readonly) CLLocationCoordinate2D center;
 @property (readonly) MKMapRect boundingRect;
+
+- (NSDictionary *)mapPointsWithHeatInMapRect:(MKMapRect)rect
+                                     atScale:(MKZoomScale)scale;
+- (MKMapRect)boundingMapRect;
+- (void)setData:(NSDictionary *)newHeatMapData;
 
 @end
