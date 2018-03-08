@@ -10,6 +10,17 @@
 
 @implementation DTMColorProvider
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.alphaPivotX = kSBAlphaPivotX;
+        self.alphaPivotY = kSBAlphaPivotY;
+        self.maxAlpha = kSBMaxAlpha;
+    }
+    return self;
+}
+
 - (void)colorForValue:(double)value
                   red:(CGFloat *)red
                 green:(CGFloat *)green
@@ -23,10 +34,10 @@
     
     value = sqrt(value);
     
-    if (value < kSBAlphaPivotY) {
-        *alpha = value * kSBAlphaPivotY / kSBAlphaPivotX;
+    if (value < self.alphaPivotY) {
+        *alpha = value * self.alphaPivotY / self.alphaPivotX;
     } else {
-        *alpha = kSBAlphaPivotY + ((kSBMaxAlpha - kSBAlphaPivotY) / (1 - kSBAlphaPivotX)) * (value - kSBAlphaPivotX);
+        *alpha = self.alphaPivotY + ((self.maxAlpha - self.alphaPivotY) / (1 - self.alphaPivotX)) * (value - self.alphaPivotX);
     }
     
     //formula converts a number from 0 to 1.0 to an rgb color.

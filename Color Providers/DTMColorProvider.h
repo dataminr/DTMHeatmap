@@ -24,6 +24,10 @@ static const CGFloat kSBMaxAlpha = 0.85;
 
 @interface DTMColorProvider : NSObject
 
+@property (nonatomic) CGFloat alphaPivotX;
+@property (nonatomic) CGFloat alphaPivotY;
+@property (nonatomic) CGFloat maxAlpha;
+
 - (void)colorForValue:(double)value
                   red:(CGFloat *)red
                 green:(CGFloat *)green

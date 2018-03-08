@@ -11,4 +11,8 @@
 
 @interface DTMHeatmapRenderer : MKOverlayRenderer
 
+@property (nonatomic) BOOL zoomNormalization;
+
+- (id)initWithOverlay:(id <MKOverlay>)overlay andHeatRadiusPoints: (NSInteger) heatRadius;
+
 @end

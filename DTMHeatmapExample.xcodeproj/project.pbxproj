@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C758EDFC1FB1C7910067D440 /* accidents_geo.json in Resources */ = {isa = PBXBuildFile; fileRef = C758EDFB1FB1C7910067D440 /* accidents_geo.json */; };
 		ED07C2811A6427BF006B26CA /* first_week.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C27E1A6427BF006B26CA /* first_week.txt */; };
 		ED07C2821A6427BF006B26CA /* mcdonalds.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C27F1A6427BF006B26CA /* mcdonalds.txt */; };
 		ED07C2831A6427BF006B26CA /* third_week.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C2801A6427BF006B26CA /* third_week.txt */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C758EDFB1FB1C7910067D440 /* accidents_geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accidents_geo.json; sourceTree = "<group>"; };
 		ED07C27E1A6427BF006B26CA /* first_week.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_week.txt; sourceTree = "<group>"; };
 		ED07C27F1A6427BF006B26CA /* mcdonalds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcdonalds.txt; sourceTree = "<group>"; };
 		ED07C2801A6427BF006B26CA /* third_week.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = third_week.txt; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		ED07C27D1A6427BF006B26CA /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
+				C758EDFB1FB1C7910067D440 /* accidents_geo.json */,
 				ED07C27E1A6427BF006B26CA /* first_week.txt */,
 				ED07C2801A6427BF006B26CA /* third_week.txt */,
 				ED07C27F1A6427BF006B26CA /* mcdonalds.txt */,
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C758EDFC1FB1C7910067D440 /* accidents_geo.json in Resources */,
 				EDAC952B1A5DC8FE00E8403E /* Main.storyboard in Resources */,
 				EDAC95301A5DC8FE00E8403E /* LaunchScreen.xib in Resources */,
 				EDAC952D1A5DC8FE00E8403E /* Images.xcassets in Resources */,
@@ -348,6 +352,7 @@
 				INFOPLIST_FILE = DTMHeatMapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,6 +363,7 @@
 				INFOPLIST_FILE = DTMHeatMapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
