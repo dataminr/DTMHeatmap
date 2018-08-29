@@ -139,4 +139,8 @@
     return toReturn;
 }
 
++ (NSValue *)valueForMKMapPoint:(MKMapPoint)mapPoint {
+    return [NSValue value:&mapPoint withObjCType:@encode(MKMapPoint)];
+}
+
 @end

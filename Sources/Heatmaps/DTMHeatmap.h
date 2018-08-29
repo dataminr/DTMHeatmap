@@ -40,4 +40,6 @@ static const int kSBScreenPointsPerBucket = 10;
 @property (readonly) CLLocationCoordinate2D center;
 @property (readonly) MKMapRect boundingRect;
 
++ (NSValue *)valueForMKMapPoint:(MKMapPoint)mapPoint;
+
 @end
