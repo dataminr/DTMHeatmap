@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AFA264A2136E50200573B77 /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA263B2136E50100573B77 /* DTMColorProvider.m */; };
+		6AFA264C2136E50200573B77 /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA263D2136E50100573B77 /* DTMDiffColorProvider.m */; };
+		6AFA264E2136E50200573B77 /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA263F2136E50100573B77 /* DTMHeatmapRenderer.m */; };
+		6AFA26502136E50200573B77 /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA26422136E50100573B77 /* DTMDiffHeatmap.m */; };
+		6AFA26522136E50200573B77 /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA26442136E50100573B77 /* DTMHeatmap.m */; };
+		6AFA26542136E50200573B77 /* NSValue+MKMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA26462136E50100573B77 /* NSValue+MKMapPoint.m */; };
 		ED07C2811A6427BF006B26CA /* first_week.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C27E1A6427BF006B26CA /* first_week.txt */; };
 		ED07C2821A6427BF006B26CA /* mcdonalds.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C27F1A6427BF006B26CA /* mcdonalds.txt */; };
 		ED07C2831A6427BF006B26CA /* third_week.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED07C2801A6427BF006B26CA /* third_week.txt */; };
-		ED07C2871A642942006B26CA /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = ED07C2861A642942006B26CA /* DTMHeatmap.m */; };
-		ED07C28A1A64299B006B26CA /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = ED07C2891A64299B006B26CA /* DTMDiffHeatmap.m */; };
-		ED0BBA071A65B3A900110424 /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BBA021A65B3A900110424 /* DTMColorProvider.m */; };
-		ED0BBA081A65B3A900110424 /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BBA041A65B3A900110424 /* DTMDiffColorProvider.m */; };
 		EDAC95221A5DC8FE00E8403E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAC95211A5DC8FE00E8403E /* main.m */; };
 		EDAC95251A5DC8FE00E8403E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAC95241A5DC8FE00E8403E /* AppDelegate.m */; };
 		EDAC95281A5DC8FE00E8403E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAC95271A5DC8FE00E8403E /* ViewController.m */; };
@@ -21,21 +23,39 @@
 		EDAC952D1A5DC8FE00E8403E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAC952C1A5DC8FE00E8403E /* Images.xcassets */; };
 		EDAC95301A5DC8FE00E8403E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAC952E1A5DC8FE00E8403E /* LaunchScreen.xib */; };
 		EDAC95461A5DC9A100E8403E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAC95451A5DC9A100E8403E /* MapKit.framework */; };
-		EDAC954E1A5DC9F000E8403E /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAC954C1A5DC9F000E8403E /* DTMHeatmapRenderer.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6AFA250F2136DBD600573B77 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6AFA25152136DBE700573B77 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		6AFA263A2136E50100573B77 /* DTMColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMColorProvider.h; sourceTree = "<group>"; };
+		6AFA263B2136E50100573B77 /* DTMColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMColorProvider.m; sourceTree = "<group>"; };
+		6AFA263C2136E50100573B77 /* DTMDiffColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMDiffColorProvider.h; sourceTree = "<group>"; };
+		6AFA263D2136E50100573B77 /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMDiffColorProvider.m; sourceTree = "<group>"; };
+		6AFA263E2136E50100573B77 /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
+		6AFA263F2136E50100573B77 /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
+		6AFA26412136E50100573B77 /* DTMDiffHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMDiffHeatmap.h; sourceTree = "<group>"; };
+		6AFA26422136E50100573B77 /* DTMDiffHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMDiffHeatmap.m; sourceTree = "<group>"; };
+		6AFA26432136E50100573B77 /* DTMHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmap.h; sourceTree = "<group>"; };
+		6AFA26442136E50100573B77 /* DTMHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmap.m; sourceTree = "<group>"; };
+		6AFA26452136E50100573B77 /* NSValue+MKMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+MKMapPoint.h"; sourceTree = "<group>"; };
+		6AFA26462136E50100573B77 /* NSValue+MKMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+MKMapPoint.m"; sourceTree = "<group>"; };
+		6AFA26492136E50100573B77 /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 		ED07C27E1A6427BF006B26CA /* first_week.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_week.txt; sourceTree = "<group>"; };
 		ED07C27F1A6427BF006B26CA /* mcdonalds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcdonalds.txt; sourceTree = "<group>"; };
 		ED07C2801A6427BF006B26CA /* third_week.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = third_week.txt; sourceTree = "<group>"; };
-		ED07C2851A642942006B26CA /* DTMHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmap.h; sourceTree = "<group>"; };
-		ED07C2861A642942006B26CA /* DTMHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmap.m; sourceTree = "<group>"; };
-		ED07C2881A64299B006B26CA /* DTMDiffHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMDiffHeatmap.h; sourceTree = "<group>"; };
-		ED07C2891A64299B006B26CA /* DTMDiffHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMDiffHeatmap.m; sourceTree = "<group>"; };
-		ED0BBA011A65B3A900110424 /* DTMColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMColorProvider.h; path = "Color Providers/DTMColorProvider.h"; sourceTree = "<group>"; };
-		ED0BBA021A65B3A900110424 /* DTMColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMColorProvider.m; path = "Color Providers/DTMColorProvider.m"; sourceTree = "<group>"; };
-		ED0BBA031A65B3A900110424 /* DTMDiffColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMDiffColorProvider.h; path = "Color Providers/DTMDiffColorProvider.h"; sourceTree = "<group>"; };
-		ED0BBA041A65B3A900110424 /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMDiffColorProvider.m; path = "Color Providers/DTMDiffColorProvider.m"; sourceTree = "<group>"; };
 		EDAC951C1A5DC8FE00E8403E /* DTMHeatmapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTMHeatmapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAC95201A5DC8FE00E8403E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDAC95211A5DC8FE00E8403E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,8 +67,6 @@
 		EDAC952C1A5DC8FE00E8403E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDAC952F1A5DC8FE00E8403E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDAC95451A5DC9A100E8403E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		EDAC954B1A5DC9F000E8403E /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
-		EDAC954C1A5DC9F000E8403E /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AFA26382136E50100573B77 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA26392136E50100573B77 /* Color Providers */,
+				6AFA263E2136E50100573B77 /* DTMHeatmapRenderer.h */,
+				6AFA263F2136E50100573B77 /* DTMHeatmapRenderer.m */,
+				6AFA26402136E50100573B77 /* Heatmaps */,
+				6AFA26492136E50100573B77 /* ModuleHeader.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6AFA26392136E50100573B77 /* Color Providers */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA263A2136E50100573B77 /* DTMColorProvider.h */,
+				6AFA263B2136E50100573B77 /* DTMColorProvider.m */,
+				6AFA263C2136E50100573B77 /* DTMDiffColorProvider.h */,
+				6AFA263D2136E50100573B77 /* DTMDiffColorProvider.m */,
+			);
+			path = "Color Providers";
+			sourceTree = "<group>";
+		};
+		6AFA26402136E50100573B77 /* Heatmaps */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA26412136E50100573B77 /* DTMDiffHeatmap.h */,
+				6AFA26422136E50100573B77 /* DTMDiffHeatmap.m */,
+				6AFA26432136E50100573B77 /* DTMHeatmap.h */,
+				6AFA26442136E50100573B77 /* DTMHeatmap.m */,
+				6AFA26452136E50100573B77 /* NSValue+MKMapPoint.h */,
+				6AFA26462136E50100573B77 /* NSValue+MKMapPoint.m */,
+			);
+			path = Heatmaps;
+			sourceTree = "<group>";
+		};
 		ED07C27D1A6427BF006B26CA /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,32 +128,10 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		ED07C2841A642942006B26CA /* Heatmaps */ = {
-			isa = PBXGroup;
-			children = (
-				ED07C2851A642942006B26CA /* DTMHeatmap.h */,
-				ED07C2861A642942006B26CA /* DTMHeatmap.m */,
-				ED07C2881A64299B006B26CA /* DTMDiffHeatmap.h */,
-				ED07C2891A64299B006B26CA /* DTMDiffHeatmap.m */,
-			);
-			path = Heatmaps;
-			sourceTree = "<group>";
-		};
-		ED6E114B1A5F052300D6DB4A /* Color Providers */ = {
-			isa = PBXGroup;
-			children = (
-				ED0BBA011A65B3A900110424 /* DTMColorProvider.h */,
-				ED0BBA021A65B3A900110424 /* DTMColorProvider.m */,
-				ED0BBA031A65B3A900110424 /* DTMDiffColorProvider.h */,
-				ED0BBA041A65B3A900110424 /* DTMDiffColorProvider.m */,
-			);
-			name = "Color Providers";
-			sourceTree = "<group>";
-		};
 		EDAC95131A5DC8FE00E8403E = {
 			isa = PBXGroup;
 			children = (
-				EDAC95481A5DC9DE00E8403E /* Heatmap */,
+				6AFA26382136E50100573B77 /* Sources */,
 				EDAC951E1A5DC8FE00E8403E /* DTMHeatmapExample */,
 				EDAC95471A5DC9CB00E8403E /* Frameworks */,
 				EDAC951D1A5DC8FE00E8403E /* Products */,
@@ -143,20 +175,10 @@
 		EDAC95471A5DC9CB00E8403E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AFA25152136DBE700573B77 /* MapKit.framework */,
 				EDAC95451A5DC9A100E8403E /* MapKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EDAC95481A5DC9DE00E8403E /* Heatmap */ = {
-			isa = PBXGroup;
-			children = (
-				ED6E114B1A5F052300D6DB4A /* Color Providers */,
-				ED07C2841A642942006B26CA /* Heatmaps */,
-				EDAC954B1A5DC9F000E8403E /* DTMHeatmapRenderer.h */,
-				EDAC954C1A5DC9F000E8403E /* DTMHeatmapRenderer.m */,
-			);
-			name = Heatmap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +191,7 @@
 				EDAC95181A5DC8FE00E8403E /* Sources */,
 				EDAC95191A5DC8FE00E8403E /* Frameworks */,
 				EDAC951A1A5DC8FE00E8403E /* Resources */,
+				6AFA250F2136DBD600573B77 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,11 +208,13 @@
 		EDAC95141A5DC8FE00E8403E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Bryan Oltman";
 				TargetAttributes = {
 					EDAC951B1A5DC8FE00E8403E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = B8UBQFRB2C;
 					};
 				};
 			};
@@ -232,14 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED07C2871A642942006B26CA /* DTMHeatmap.m in Sources */,
+				6AFA264A2136E50200573B77 /* DTMColorProvider.m in Sources */,
 				EDAC95281A5DC8FE00E8403E /* ViewController.m in Sources */,
+				6AFA264C2136E50200573B77 /* DTMDiffColorProvider.m in Sources */,
+				6AFA264E2136E50200573B77 /* DTMHeatmapRenderer.m in Sources */,
+				6AFA26522136E50200573B77 /* DTMHeatmap.m in Sources */,
 				EDAC95251A5DC8FE00E8403E /* AppDelegate.m in Sources */,
-				ED0BBA071A65B3A900110424 /* DTMColorProvider.m in Sources */,
-				ED0BBA081A65B3A900110424 /* DTMDiffColorProvider.m in Sources */,
+				6AFA26502136E50200573B77 /* DTMDiffHeatmap.m in Sources */,
+				6AFA26542136E50200573B77 /* NSValue+MKMapPoint.m in Sources */,
 				EDAC95221A5DC8FE00E8403E /* main.m in Sources */,
-				EDAC954E1A5DC9F000E8403E /* DTMHeatmapRenderer.m in Sources */,
-				ED07C28A1A64299B006B26CA /* DTMDiffHeatmap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B8UBQFRB2C;
 				INFOPLIST_FILE = DTMHeatMapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dataminr.DTMHeatmapExample.bikram990;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,8 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B8UBQFRB2C;
 				INFOPLIST_FILE = DTMHeatMapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dataminr.DTMHeatmapExample.bikram990;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

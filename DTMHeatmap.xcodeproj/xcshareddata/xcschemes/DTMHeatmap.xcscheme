@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E82320D1FE5C12700332ACF"
                BuildableName = "DTMHeatmap.framework"
-               BlueprintName = "DTMHeatmap"
+               BlueprintName = "DTMHeatmap_iOS"
                ReferencedContainer = "container:DTMHeatmap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -49,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E82320D1FE5C12700332ACF"
             BuildableName = "DTMHeatmap.framework"
-            BlueprintName = "DTMHeatmap"
+            BlueprintName = "DTMHeatmap_iOS"
             ReferencedContainer = "container:DTMHeatmap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E82320D1FE5C12700332ACF"
             BuildableName = "DTMHeatmap.framework"
-            BlueprintName = "DTMHeatmap"
+            BlueprintName = "DTMHeatmap_iOS"
             ReferencedContainer = "container:DTMHeatmap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

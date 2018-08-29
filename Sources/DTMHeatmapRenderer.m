@@ -145,10 +145,18 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
 
        
         CGImageRef cgImage = CGBitmapContextCreateImage(bitmapContext);
+        
+#if TARGET_OS_IPHONE
         UIImage *img = [UIImage imageWithCGImage:cgImage];
         UIGraphicsPushContext(context);
         [img drawInRect:usIntersect];
         UIGraphicsPopContext();
+#elif TARGET_OS_MAC
+        NSImage *img = [[NSImage alloc] initWithCGImage:cgImage size:NSZeroSize];
+        [NSGraphicsContext saveGraphicsState];
+        [img drawInRect:usIntersect];
+        [NSGraphicsContext restoreGraphicsState];
+#endif
         
         CFRelease(cgImage);
         CFRelease(bitmapContext);

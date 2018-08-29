@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Dataminr. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
 static const CGFloat kSBMapRectPadding = 100000;

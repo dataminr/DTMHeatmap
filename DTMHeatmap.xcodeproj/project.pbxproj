@@ -7,39 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E8232211FE5C17800332ACF /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82321D1FE5C17700332ACF /* DTMHeatmap.m */; };
-		2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321E1FE5C17700332ACF /* DTMHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8232241FE5C17800332ACF /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232201FE5C17700332ACF /* DTMDiffHeatmap.m */; };
-		2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232251FE5C18500332ACF /* DTMDiffColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E82322A1FE5C18600332ACF /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232261FE5C18500332ACF /* DTMColorProvider.m */; };
-		2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232271FE5C18500332ACF /* DTMColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E82322C1FE5C18600332ACF /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */; };
-		2E8232311FE5C1FC00332ACF /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */; };
-		2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8232381FE5C47100332ACF /* ModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E82323C1FE5C53E00332ACF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E82323B1FE5C53E00332ACF /* MapKit.framework */; };
-		2E8232401FE5C80B00332ACF /* NSValue+MKMapPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8232411FE5C80B00332ACF /* NSValue+MKMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */; };
+		6AFA25DF2136DCA500573B77 /* DTMColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25CF2136DCA500573B77 /* DTMColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E02136DCA500573B77 /* DTMColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25CF2136DCA500573B77 /* DTMColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E12136DCA500573B77 /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D02136DCA500573B77 /* DTMColorProvider.m */; };
+		6AFA25E22136DCA500573B77 /* DTMColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D02136DCA500573B77 /* DTMColorProvider.m */; };
+		6AFA25E32136DCA500573B77 /* DTMDiffColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D12136DCA500573B77 /* DTMDiffColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E42136DCA500573B77 /* DTMDiffColorProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D12136DCA500573B77 /* DTMDiffColorProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E52136DCA500573B77 /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D22136DCA500573B77 /* DTMDiffColorProvider.m */; };
+		6AFA25E62136DCA500573B77 /* DTMDiffColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D22136DCA500573B77 /* DTMDiffColorProvider.m */; };
+		6AFA25E72136DCA500573B77 /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D32136DCA500573B77 /* DTMHeatmapRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E82136DCA500573B77 /* DTMHeatmapRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D32136DCA500573B77 /* DTMHeatmapRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25E92136DCA500573B77 /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D42136DCA500573B77 /* DTMHeatmapRenderer.m */; };
+		6AFA25EA2136DCA500573B77 /* DTMHeatmapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D42136DCA500573B77 /* DTMHeatmapRenderer.m */; };
+		6AFA25EB2136DCA500573B77 /* DTMDiffHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D62136DCA500573B77 /* DTMDiffHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25EC2136DCA500573B77 /* DTMDiffHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D62136DCA500573B77 /* DTMDiffHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25ED2136DCA500573B77 /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D72136DCA500573B77 /* DTMDiffHeatmap.m */; };
+		6AFA25EE2136DCA500573B77 /* DTMDiffHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D72136DCA500573B77 /* DTMDiffHeatmap.m */; };
+		6AFA25EF2136DCA500573B77 /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D82136DCA500573B77 /* DTMHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25F02136DCA500573B77 /* DTMHeatmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25D82136DCA500573B77 /* DTMHeatmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25F12136DCA500573B77 /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D92136DCA500573B77 /* DTMHeatmap.m */; };
+		6AFA25F22136DCA500573B77 /* DTMHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25D92136DCA500573B77 /* DTMHeatmap.m */; };
+		6AFA25F32136DCA500573B77 /* NSValue+MKMapPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25DA2136DCA500573B77 /* NSValue+MKMapPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25F42136DCA500573B77 /* NSValue+MKMapPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25DA2136DCA500573B77 /* NSValue+MKMapPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25F52136DCA500573B77 /* NSValue+MKMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25DB2136DCA500573B77 /* NSValue+MKMapPoint.m */; };
+		6AFA25F62136DCA500573B77 /* NSValue+MKMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA25DB2136DCA500573B77 /* NSValue+MKMapPoint.m */; };
+		6AFA25FB2136DCA500573B77 /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25DE2136DCA500573B77 /* ModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFA25FC2136DCA500573B77 /* ModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFA25DE2136DCA500573B77 /* ModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E82320E1FE5C12700332ACF /* DTMHeatmap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTMHeatmap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E82321A1FE5C16700332ACF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E82321D1FE5C17700332ACF /* DTMHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMHeatmap.m; path = Heatmaps/DTMHeatmap.m; sourceTree = "<group>"; };
-		2E82321E1FE5C17700332ACF /* DTMHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMHeatmap.h; path = Heatmaps/DTMHeatmap.h; sourceTree = "<group>"; };
-		2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMDiffHeatmap.h; path = Heatmaps/DTMDiffHeatmap.h; sourceTree = "<group>"; };
-		2E8232201FE5C17700332ACF /* DTMDiffHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMDiffHeatmap.m; path = Heatmaps/DTMDiffHeatmap.m; sourceTree = "<group>"; };
-		2E8232251FE5C18500332ACF /* DTMDiffColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMDiffColorProvider.h; path = "Color Providers/DTMDiffColorProvider.h"; sourceTree = "<group>"; };
-		2E8232261FE5C18500332ACF /* DTMColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMColorProvider.m; path = "Color Providers/DTMColorProvider.m"; sourceTree = "<group>"; };
-		2E8232271FE5C18500332ACF /* DTMColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTMColorProvider.h; path = "Color Providers/DTMColorProvider.h"; sourceTree = "<group>"; };
-		2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTMDiffColorProvider.m; path = "Color Providers/DTMDiffColorProvider.m"; sourceTree = "<group>"; };
-		2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
-		2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
-		2E8232381FE5C47100332ACF /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 		2E82323B1FE5C53E00332ACF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+MKMapPoint.h"; path = "Heatmaps/NSValue+MKMapPoint.h"; sourceTree = "<group>"; };
-		2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValue+MKMapPoint.m"; path = "Heatmaps/NSValue+MKMapPoint.m"; sourceTree = "<group>"; };
+		6A817C8E21366C65002D10FF /* DTMHeatmap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTMHeatmap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFA25CF2136DCA500573B77 /* DTMColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMColorProvider.h; sourceTree = "<group>"; };
+		6AFA25D02136DCA500573B77 /* DTMColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMColorProvider.m; sourceTree = "<group>"; };
+		6AFA25D12136DCA500573B77 /* DTMDiffColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMDiffColorProvider.h; sourceTree = "<group>"; };
+		6AFA25D22136DCA500573B77 /* DTMDiffColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMDiffColorProvider.m; sourceTree = "<group>"; };
+		6AFA25D32136DCA500573B77 /* DTMHeatmapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmapRenderer.h; sourceTree = "<group>"; };
+		6AFA25D42136DCA500573B77 /* DTMHeatmapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmapRenderer.m; sourceTree = "<group>"; };
+		6AFA25D62136DCA500573B77 /* DTMDiffHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMDiffHeatmap.h; sourceTree = "<group>"; };
+		6AFA25D72136DCA500573B77 /* DTMDiffHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMDiffHeatmap.m; sourceTree = "<group>"; };
+		6AFA25D82136DCA500573B77 /* DTMHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMHeatmap.h; sourceTree = "<group>"; };
+		6AFA25D92136DCA500573B77 /* DTMHeatmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMHeatmap.m; sourceTree = "<group>"; };
+		6AFA25DA2136DCA500573B77 /* NSValue+MKMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+MKMapPoint.h"; sourceTree = "<group>"; };
+		6AFA25DB2136DCA500573B77 /* NSValue+MKMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+MKMapPoint.m"; sourceTree = "<group>"; };
+		6AFA25DC2136DCA500573B77 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		6AFA25DD2136DCA500573B77 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		6AFA25DE2136DCA500573B77 /* ModuleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +66,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A817C8A21366C65002D10FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2E8232041FE5C12700332ACF = {
 			isa = PBXGroup;
 			children = (
-				2E8232381FE5C47100332ACF /* ModuleHeader.h */,
-				2E82322D1FE5C18900332ACF /* Color Providers */,
-				2E82322E1FE5C1E200332ACF /* Heatmaps */,
-				2E8232301FE5C1FC00332ACF /* DTMHeatmapRenderer.h */,
-				2E82322F1FE5C1FC00332ACF /* DTMHeatmapRenderer.m */,
-				2E82321A1FE5C16700332ACF /* Info.plist */,
+				6AFA25CD2136DCA500573B77 /* Sources */,
 				2E82320F1FE5C12700332ACF /* Products */,
 				2E82323A1FE5C53E00332ACF /* Frameworks */,
 			);
@@ -72,32 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				2E82320E1FE5C12700332ACF /* DTMHeatmap.framework */,
+				6A817C8E21366C65002D10FF /* DTMHeatmap.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2E82322D1FE5C18900332ACF /* Color Providers */ = {
-			isa = PBXGroup;
-			children = (
-				2E8232271FE5C18500332ACF /* DTMColorProvider.h */,
-				2E8232261FE5C18500332ACF /* DTMColorProvider.m */,
-				2E8232251FE5C18500332ACF /* DTMDiffColorProvider.h */,
-				2E8232281FE5C18500332ACF /* DTMDiffColorProvider.m */,
-			);
-			name = "Color Providers";
-			sourceTree = "<group>";
-		};
-		2E82322E1FE5C1E200332ACF /* Heatmaps */ = {
-			isa = PBXGroup;
-			children = (
-				2E82323E1FE5C80B00332ACF /* NSValue+MKMapPoint.h */,
-				2E82323F1FE5C80B00332ACF /* NSValue+MKMapPoint.m */,
-				2E82321F1FE5C17700332ACF /* DTMDiffHeatmap.h */,
-				2E8232201FE5C17700332ACF /* DTMDiffHeatmap.m */,
-				2E82321E1FE5C17700332ACF /* DTMHeatmap.h */,
-				2E82321D1FE5C17700332ACF /* DTMHeatmap.m */,
-			);
-			name = Heatmaps;
 			sourceTree = "<group>";
 		};
 		2E82323A1FE5C53E00332ACF /* Frameworks */ = {
@@ -108,6 +102,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6AFA25CD2136DCA500573B77 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA25CE2136DCA500573B77 /* Color Providers */,
+				6AFA25D32136DCA500573B77 /* DTMHeatmapRenderer.h */,
+				6AFA25D42136DCA500573B77 /* DTMHeatmapRenderer.m */,
+				6AFA25D52136DCA500573B77 /* Heatmaps */,
+				6AFA25DC2136DCA500573B77 /* Info-iOS.plist */,
+				6AFA25DD2136DCA500573B77 /* Info-macOS.plist */,
+				6AFA25DE2136DCA500573B77 /* ModuleHeader.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6AFA25CE2136DCA500573B77 /* Color Providers */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA25CF2136DCA500573B77 /* DTMColorProvider.h */,
+				6AFA25D02136DCA500573B77 /* DTMColorProvider.m */,
+				6AFA25D12136DCA500573B77 /* DTMDiffColorProvider.h */,
+				6AFA25D22136DCA500573B77 /* DTMDiffColorProvider.m */,
+			);
+			path = "Color Providers";
+			sourceTree = "<group>";
+		};
+		6AFA25D52136DCA500573B77 /* Heatmaps */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA25D62136DCA500573B77 /* DTMDiffHeatmap.h */,
+				6AFA25D72136DCA500573B77 /* DTMDiffHeatmap.m */,
+				6AFA25D82136DCA500573B77 /* DTMHeatmap.h */,
+				6AFA25D92136DCA500573B77 /* DTMHeatmap.m */,
+				6AFA25DA2136DCA500573B77 /* NSValue+MKMapPoint.h */,
+				6AFA25DB2136DCA500573B77 /* NSValue+MKMapPoint.m */,
+			);
+			path = Heatmaps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -115,35 +147,65 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8232291FE5C18600332ACF /* DTMDiffColorProvider.h in Headers */,
-				2E8232321FE5C1FC00332ACF /* DTMHeatmapRenderer.h in Headers */,
-				2E8232221FE5C17800332ACF /* DTMHeatmap.h in Headers */,
-				2E8232391FE5C47200332ACF /* ModuleHeader.h in Headers */,
-				2E8232231FE5C17800332ACF /* DTMDiffHeatmap.h in Headers */,
-				2E82322B1FE5C18600332ACF /* DTMColorProvider.h in Headers */,
-				2E8232401FE5C80B00332ACF /* NSValue+MKMapPoint.h in Headers */,
+				6AFA25EB2136DCA500573B77 /* DTMDiffHeatmap.h in Headers */,
+				6AFA25FB2136DCA500573B77 /* ModuleHeader.h in Headers */,
+				6AFA25E32136DCA500573B77 /* DTMDiffColorProvider.h in Headers */,
+				6AFA25DF2136DCA500573B77 /* DTMColorProvider.h in Headers */,
+				6AFA25F32136DCA500573B77 /* NSValue+MKMapPoint.h in Headers */,
+				6AFA25E72136DCA500573B77 /* DTMHeatmapRenderer.h in Headers */,
+				6AFA25EF2136DCA500573B77 /* DTMHeatmap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A817C8B21366C65002D10FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFA25EC2136DCA500573B77 /* DTMDiffHeatmap.h in Headers */,
+				6AFA25FC2136DCA500573B77 /* ModuleHeader.h in Headers */,
+				6AFA25E42136DCA500573B77 /* DTMDiffColorProvider.h in Headers */,
+				6AFA25E02136DCA500573B77 /* DTMColorProvider.h in Headers */,
+				6AFA25F42136DCA500573B77 /* NSValue+MKMapPoint.h in Headers */,
+				6AFA25E82136DCA500573B77 /* DTMHeatmapRenderer.h in Headers */,
+				6AFA25F02136DCA500573B77 /* DTMHeatmap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E82320D1FE5C12700332ACF /* DTMHeatmap */ = {
+		2E82320D1FE5C12700332ACF /* DTMHeatmap_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8232161FE5C12700332ACF /* Build configuration list for PBXNativeTarget "DTMHeatmap" */;
+			buildConfigurationList = 2E8232161FE5C12700332ACF /* Build configuration list for PBXNativeTarget "DTMHeatmap_iOS" */;
 			buildPhases = (
 				2E8232091FE5C12700332ACF /* Sources */,
 				2E82320A1FE5C12700332ACF /* Frameworks */,
 				2E82320B1FE5C12700332ACF /* Headers */,
-				2E82320C1FE5C12700332ACF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DTMHeatmap;
+			name = DTMHeatmap_iOS;
 			productName = DTMHeatmap;
 			productReference = 2E82320E1FE5C12700332ACF /* DTMHeatmap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A817C8D21366C65002D10FF /* DTMHeatmap_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A817C9521366C66002D10FF /* Build configuration list for PBXNativeTarget "DTMHeatmap_macOS" */;
+			buildPhases = (
+				6A817C8921366C65002D10FF /* Sources */,
+				6A817C8A21366C65002D10FF /* Frameworks */,
+				6A817C8B21366C65002D10FF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTMHeatmap_macOS;
+			productName = DTMHeatmap_macOS;
+			productReference = 6A817C8E21366C65002D10FF /* DTMHeatmap.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -157,6 +219,10 @@
 				TargetAttributes = {
 					2E82320D1FE5C12700332ACF = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					6A817C8D21366C65002D10FF = {
+						CreatedOnToolsVersion = 9.4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -167,38 +233,43 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2E8232041FE5C12700332ACF;
 			productRefGroup = 2E82320F1FE5C12700332ACF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E82320D1FE5C12700332ACF /* DTMHeatmap */,
+				2E82320D1FE5C12700332ACF /* DTMHeatmap_iOS */,
+				6A817C8D21366C65002D10FF /* DTMHeatmap_macOS */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2E82320C1FE5C12700332ACF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E8232091FE5C12700332ACF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E82322A1FE5C18600332ACF /* DTMColorProvider.m in Sources */,
-				2E8232311FE5C1FC00332ACF /* DTMHeatmapRenderer.m in Sources */,
-				2E82322C1FE5C18600332ACF /* DTMDiffColorProvider.m in Sources */,
-				2E8232211FE5C17800332ACF /* DTMHeatmap.m in Sources */,
-				2E8232411FE5C80B00332ACF /* NSValue+MKMapPoint.m in Sources */,
-				2E8232241FE5C17800332ACF /* DTMDiffHeatmap.m in Sources */,
+				6AFA25E92136DCA500573B77 /* DTMHeatmapRenderer.m in Sources */,
+				6AFA25ED2136DCA500573B77 /* DTMDiffHeatmap.m in Sources */,
+				6AFA25E12136DCA500573B77 /* DTMColorProvider.m in Sources */,
+				6AFA25E52136DCA500573B77 /* DTMDiffColorProvider.m in Sources */,
+				6AFA25F52136DCA500573B77 /* NSValue+MKMapPoint.m in Sources */,
+				6AFA25F12136DCA500573B77 /* DTMHeatmap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A817C8921366C65002D10FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFA25EA2136DCA500573B77 /* DTMHeatmapRenderer.m in Sources */,
+				6AFA25EE2136DCA500573B77 /* DTMDiffHeatmap.m in Sources */,
+				6AFA25E22136DCA500573B77 /* DTMColorProvider.m in Sources */,
+				6AFA25E62136DCA500573B77 /* DTMDiffColorProvider.m in Sources */,
+				6AFA25F62136DCA500573B77 /* NSValue+MKMapPoint.m in Sources */,
+				6AFA25F22136DCA500573B77 /* DTMHeatmap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,18 +390,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=*]" = DTMHeatmap.xcodeproj/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.boltman.DTMHeatmap;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.DTMHeatmap;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,20 +413,79 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=*]" = DTMHeatmap.xcodeproj/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.boltman.DTMHeatmap;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.DTMHeatmap;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A817C9321366C66002D10FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B8UBQFRB2C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.DTMHeatmap;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6A817C9421366C66002D10FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B8UBQFRB2C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataminr.DTMHeatmap;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -369,11 +501,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8232161FE5C12700332ACF /* Build configuration list for PBXNativeTarget "DTMHeatmap" */ = {
+		2E8232161FE5C12700332ACF /* Build configuration list for PBXNativeTarget "DTMHeatmap_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8232171FE5C12700332ACF /* Debug */,
 				2E8232181FE5C12700332ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A817C9521366C66002D10FF /* Build configuration list for PBXNativeTarget "DTMHeatmap_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A817C9321366C66002D10FF /* Debug */,
+				6A817C9421366C66002D10FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

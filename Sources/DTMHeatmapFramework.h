@@ -6,7 +6,7 @@
 //  Copyright © 2017 Bryan Oltman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
 //! Project version number for DTMHeatmap.
