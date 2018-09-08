@@ -9,6 +9,9 @@
 #import "DTMHeatmapRenderer.h"
 #import "DTMColorProvider.h"
 
+#if TARGET_OS_IPHONE
+
+#elif TARGET_OS_MAC
 @interface NSImage(saveAsJpegWithName)
 - (void) saveAsJpegWithName:(NSString*) fileName;
 @end
@@ -26,6 +29,7 @@
 }
 
 @end
+#endif
 
 // This sets the spread of the heat from each map point (in screen pts.)
 static const NSInteger kSBHeatRadiusInPoints = 48;
