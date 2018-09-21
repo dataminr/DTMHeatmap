@@ -9,6 +9,28 @@
 #import "DTMHeatmapRenderer.h"
 #import "DTMColorProvider.h"
 
+#if TARGET_OS_IPHONE
+
+#elif TARGET_OS_MAC
+@interface NSImage(saveAsJpegWithName)
+- (void) saveAsJpegWithName:(NSString*) fileName;
+@end
+
+@implementation NSImage(saveAsJpegWithName)
+
+- (void) saveAsJpegWithName:(NSString*) fileName
+{
+    // Cache the reduced image
+    NSData *imageData = [self TIFFRepresentation];
+    NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:imageData];
+    NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:1.0] forKey:NSImageCompressionFactor];
+    imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
+    [imageData writeToFile:fileName atomically:NO];
+}
+
+@end
+#endif
+
 // This sets the spread of the heat from each map point (in screen pts.)
 static const NSInteger kSBHeatRadiusInPoints = 48;
 
@@ -145,10 +167,20 @@ static const NSInteger kSBHeatRadiusInPoints = 48;
 
        
         CGImageRef cgImage = CGBitmapContextCreateImage(bitmapContext);
+        
+#if TARGET_OS_IPHONE
         UIImage *img = [UIImage imageWithCGImage:cgImage];
         UIGraphicsPushContext(context);
         [img drawInRect:usIntersect];
         UIGraphicsPopContext();
+#elif TARGET_OS_MAC
+        NSImage *img = [[NSImage alloc] initWithCGImage:cgImage size:NSZeroSize];
+        [NSGraphicsContext saveGraphicsState];
+        NSGraphicsContext *gContext = [NSGraphicsContext graphicsContextWithCGContext:context flipped:YES];
+        [NSGraphicsContext setCurrentContext:gContext];
+        [img drawInRect:usIntersect];
+        [NSGraphicsContext restoreGraphicsState];
+#endif
         
         CFRelease(cgImage);
         CFRelease(bitmapContext);

@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Dataminr. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 // These affect the transparency of the heatmap
 // Colder areas will be more transparent
